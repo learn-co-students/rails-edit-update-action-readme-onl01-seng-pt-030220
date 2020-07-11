@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    binding.pry
     @article = Article.new
     @article.title = params[:title]
     @article.description = params[:description]
